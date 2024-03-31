@@ -4,8 +4,7 @@
     {
       "domain": [
         "services.googleapis.cn",
-        "www.microsoft.com",
-        "learn.microsoft.com"
+        "www.microsoft.com"
       ],
       "domain_suffix": [
         ".sharepoint.com",
