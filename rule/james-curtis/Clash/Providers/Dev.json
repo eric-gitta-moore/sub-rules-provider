@@ -3,6 +3,7 @@
   "rules": [
     {
       "domain": [
+        "storage.googleapis.com"
       ],
       "domain_suffix": [
         ".googlesource.com"
