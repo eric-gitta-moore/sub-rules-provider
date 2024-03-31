@@ -3,8 +3,7 @@
   "rules": [
     {
       "domain": [
-        "services.googleapis.cn",
-        "www.microsoft.com"
+        "services.googleapis.cn"
       ],
       "domain_suffix": [
         ".sharepoint.com",
