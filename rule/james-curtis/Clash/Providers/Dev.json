@@ -3,7 +3,8 @@
   "rules": [
     {
       "domain": [
-        "storage.googleapis.com"
+        "storage.googleapis.com",
+        "commondatastorage.googleapis.com"
       ],
       "domain_suffix": [
         ".googlesource.com"
