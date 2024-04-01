@@ -41,29 +41,6 @@ rules:
  - ...
 ```
 
-
-
-# 使用示例
-
-![1.img](docs/img/1.png)
-
-# 我的机场
-- hiclouda.com
-- dash.fscloud.cc
-- www.eevpn.com
-- 一元机场.com
-- bai.ee
-- 一元者也.com
-
-# 安装包国内直连
-
-clash-verge
-- [Windows x64](https://mirror.ghproxy.com/https://github.com/zzzgydi/clash-verge/releases/download/v1.3.7/Clash.Verge_1.3.7_x64_en-US.msi)
-- [macOS intel](https://mirror.ghproxy.com/https://github.com/zzzgydi/clash-verge/releases/download/v1.3.7/Clash.Verge_1.3.7_x64.dmg)
-- [macOS arm](https://mirror.ghproxy.com/https://github.com/zzzgydi/clash-verge/releases/download/v1.3.7/Clash.Verge_1.3.7_aarch64.dmg)
-
-镜像代理 `https://mirror.ghproxy.com/`
-
 # 工具
 - https://getnekobox.com/other_tools/
 - https://getsingbox.com/other_tools/
