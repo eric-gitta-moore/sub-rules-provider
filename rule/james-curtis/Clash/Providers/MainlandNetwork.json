@@ -4,9 +4,11 @@
     {
       "domain": [
         "dl.google.com",
-        "download.visualstudio.microsoft.com"
+        "download.visualstudio.microsoft.com",
+        "app.zoom.us"
       ],
       "domain_suffix": [
+        ".g-tun.com"
       ]
     }
   ]
