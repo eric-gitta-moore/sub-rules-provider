@@ -4,6 +4,7 @@
     {
       "domain": [
         "dl.google.com",
+        "fonts.gstatic.com",
         "download.visualstudio.microsoft.com",
         "app.zoom.us"
       ],
