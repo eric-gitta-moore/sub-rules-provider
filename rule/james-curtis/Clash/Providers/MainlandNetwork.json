@@ -9,7 +9,8 @@
         "app.zoom.us"
       ],
       "domain_suffix": [
-        ".g-tun.com"
+        ".g-tun.com",
+        ".cloud.zoom.us"
       ]
     }
   ]
