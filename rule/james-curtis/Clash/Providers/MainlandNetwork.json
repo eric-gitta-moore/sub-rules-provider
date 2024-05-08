@@ -5,12 +5,10 @@
       "domain": [
         "dl.google.com",
         "fonts.gstatic.com",
-        "download.visualstudio.microsoft.com",
-        "app.zoom.us"
+        "download.visualstudio.microsoft.com"
       ],
       "domain_suffix": [
-        ".g-tun.com",
-        ".cloud.zoom.us"
+        ".g-tun.com"
       ]
     }
   ]
