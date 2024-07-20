@@ -11,7 +11,9 @@
         ".gstatic.com",
         ".cdn2020.com",
         ".360sres.com",
-        ".cdn.office.net"
+        ".cdn.office.net",
+        ".cloud.cupronickel.goog",
+        "-pa.googleapis.com"
       ]
     }
   ]
