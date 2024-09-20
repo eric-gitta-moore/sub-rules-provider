@@ -1,5 +1,5 @@
 payload:
-  - DOMAIN-SUFFIX,.g-tun.com
+  - DOMAIN-SUFFIX,g-tun.com
   - DOMAIN,dl.google.com
   - DOMAIN,fonts.gstatic.com
   - DOMAIN,download.visualstudio.microsoft.com

@@ -1,14 +1,14 @@
 payload:
-  - DOMAIN-SUFFIX,.lazada.com
-  - DOMAIN-SUFFIX,.lazada.com.my
-  - DOMAIN-SUFFIX,.lazada.co.id
-  - DOMAIN-SUFFIX,.lazada.co.ph
-  - DOMAIN-SUFFIX,.lazada.com.ph
-  - DOMAIN-SUFFIX,.lazada.sg
-  - DOMAIN-SUFFIX,.lazada.vn
-  - DOMAIN-SUFFIX,.daraz.com
-  - DOMAIN-SUFFIX,.alicdn.com
-  - DOMAIN-SUFFIX,.lzdcdn.com
-  - DOMAIN-SUFFIX,.lazcdn.com
-  - DOMAIN-SUFFIX,.alibaba-inc.com
-  - DOMAIN-SUFFIX,.antfin.com
+  - DOMAIN-SUFFIX,lazada.com
+  - DOMAIN-SUFFIX,lazada.com.my
+  - DOMAIN-SUFFIX,lazada.co.id
+  - DOMAIN-SUFFIX,lazada.co.ph
+  - DOMAIN-SUFFIX,lazada.com.ph
+  - DOMAIN-SUFFIX,lazada.sg
+  - DOMAIN-SUFFIX,lazada.vn
+  - DOMAIN-SUFFIX,daraz.com
+  - DOMAIN-SUFFIX,alicdn.com
+  - DOMAIN-SUFFIX,lzdcdn.com
+  - DOMAIN-SUFFIX,lazcdn.com
+  - DOMAIN-SUFFIX,alibaba-inc.com
+  - DOMAIN-SUFFIX,antfin.com
