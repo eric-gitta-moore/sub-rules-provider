@@ -3,3 +3,4 @@ payload:
   - DOMAIN,dl.google.com
   - DOMAIN,fonts.gstatic.com
   - DOMAIN,download.visualstudio.microsoft.com
+  - DOMAIN-SUFFIX,tiktok-intl.com
