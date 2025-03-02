@@ -4,3 +4,4 @@ payload:
   - DOMAIN,fonts.gstatic.com
   - DOMAIN,download.visualstudio.microsoft.com
   - DOMAIN-SUFFIX,tiktok-intl.com
+  - DOMAIN-SUFFIX,byted.org
