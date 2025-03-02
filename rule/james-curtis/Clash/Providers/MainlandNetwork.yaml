@@ -5,3 +5,5 @@ payload:
   - DOMAIN,download.visualstudio.microsoft.com
   - DOMAIN-SUFFIX,tiktok-intl.com
   - DOMAIN-SUFFIX,byted.org
+  - DOMAIN-SUFFIX,bytedance.net
+  - DOMAIN-SUFFIX,bytedance.com
