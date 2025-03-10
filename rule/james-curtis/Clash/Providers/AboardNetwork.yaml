@@ -17,3 +17,5 @@ payload:
   - DOMAIN-SUFFIX,cdn2020.com
   - DOMAIN-SUFFIX,cloud.cupronickel.goog
   - DOMAIN-KEYWORD,-pa.googleapis.com
+
+  - DOMAIN-SUFFIX,wetype.weixin.qq.com
