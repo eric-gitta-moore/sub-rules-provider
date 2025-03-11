@@ -19,3 +19,4 @@ payload:
   - DOMAIN-KEYWORD,-pa.googleapis.com
 
   - DOMAIN-SUFFIX,wetype.weixin.qq.com
+  - DOMAIN-SUFFIX,azure.cn
