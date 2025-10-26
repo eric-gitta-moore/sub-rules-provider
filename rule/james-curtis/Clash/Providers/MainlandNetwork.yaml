@@ -12,3 +12,8 @@ payload:
   - DOMAIN-SUFFIX,zijieapi.com
   - DOMAIN-SUFFIX,feelgood.cn
   - DOMAIN-SUFFIX,bytehwm.com
+# steam 客户端/下载
+  - PROCESS-NAME,steamwebhelper.exe
+  - DOMAIN-SUFFIX,steamcontent.com
+# 三角洲国际服
+  - DOMAIN-SUFFIX,download.dgameglobal.com
