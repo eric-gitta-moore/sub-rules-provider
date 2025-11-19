@@ -4,10 +4,15 @@ log:
   level: info
 inbounds:
   - listen: 0.0.0.0
-    listen_port: 10817
+    listen_port: 29023
     type: vless
     tag: vless-in
     users: [{ uuid: c5fdfb1f-df0d-4b93-a7a1-8051aeb27bf0 }]
+    # mkcert test.cc
+    tls:
+      enabled: true
+      certificate_path: './test.cc.pem'
+      key_path: './test.cc-key.pem'
     multiplex:
       enabled: true
     transport:
