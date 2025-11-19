@@ -1,0 +1,20 @@
+# 给 singbox 使用前需要转 json
+# yq -o j config.yaml > config.json
+log:
+  level: info
+inbounds:
+  - listen: 0.0.0.0
+    listen_port: 10817
+    type: vless
+    tag: vless-in
+    users: [{ uuid: c5fdfb1f-df0d-4b93-a7a1-8051aeb27bf0 }]
+    multiplex:
+      enabled: true
+    transport:
+      type: ws
+      path: /streaming
+      max_early_data: 2048
+      early_data_header_name: Sec-WebSocket-Protocol
+outbounds:
+  - type: direct
+    tag: direct-out
