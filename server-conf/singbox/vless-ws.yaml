@@ -11,8 +11,8 @@ inbounds:
     # mkcert test.cc
     tls:
       enabled: true
-      certificate_path: './test.cc.pem'
-      key_path: './test.cc-key.pem'
+      certificate_path: './cert.pem'
+      key_path: './cert-key.pem'
     multiplex:
       enabled: true
     transport:
