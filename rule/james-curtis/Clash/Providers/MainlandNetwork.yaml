@@ -1,8 +1,10 @@
 payload:
+  # g suite
   - DOMAIN-SUFFIX,g-tun.com
   - DOMAIN,dl.google.com
   - DOMAIN,fonts.gstatic.com
   - DOMAIN,download.visualstudio.microsoft.com
+  # byted
   - DOMAIN-SUFFIX,tiktok-intl.com
   - DOMAIN-SUFFIX,byted.org
   - DOMAIN-SUFFIX,bytedance.net
