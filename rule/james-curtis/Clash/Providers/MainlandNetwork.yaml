@@ -17,5 +17,6 @@ payload:
   # 三角洲国际服
   - DOMAIN-SUFFIX,download.dgameglobal.com
   # docker mirror
+  - DOMAIN-SUFFIX,daocloud.io
   - DOMAIN-SUFFIX,daocloud.vip
   - DOMAIN-SUFFIX,1panel.live
