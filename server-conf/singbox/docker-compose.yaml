@@ -1,0 +1,18 @@
+services:
+  singbox:
+    image: ghcr.io/sagernet/sing-box:v1.12.12
+    ports:
+      - 29023:29023
+      - 29024:29024
+    volumes:
+      - .:/singbox/conf
+    command: run -D /singbox/conf
+
+  caddy:
+    image: caddy:2.10.2-alpine
+    ports:
+      - 21180:80
+      - 21433:80
+      - 21433:80/udp
+    volumes:
+      - .:/etc/caddy

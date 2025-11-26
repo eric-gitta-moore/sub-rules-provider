@@ -1,0 +1,33 @@
+aa.cc {
+	# vless+wss
+	handle_path /v1/realtime/* {
+		# 注意：这里必须写 https:// 协议头，否则 Caddy 默认走 http
+		reverse_proxy https://127.0.0.1:29023 {
+			transport http {
+				tls_insecure_skip_verify
+			}
+		}
+	}
+
+	# vmess+wss
+	handle_path /v2/realtime/* {
+		# 注意：这里必须写 https:// 协议头，否则 Caddy 默认走 http
+		reverse_proxy https://127.0.0.1:29023 {
+			transport http {
+				tls_insecure_skip_verify
+			}
+		}
+	}
+
+	# 2. 针对普通 Chat API 的分流规则 (SSE/HTTP)
+	# handle_path /v1/chat/* {
+	# 	reverse_proxy http://127.0.0.1:8080
+	# }
+
+	# 3. 默认兜底 (可选)
+	handle {
+		root * ./
+		try_files {path} /index.html
+		file_server
+	}
+}
