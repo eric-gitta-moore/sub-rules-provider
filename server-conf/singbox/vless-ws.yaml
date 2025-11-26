@@ -7,21 +7,21 @@ log:
   level: info
 inbounds:
   - listen: 0.0.0.0
-    listen_port: 29023
+    listen_port: 11023
     type: vless
     tag: vless-in
     users: [{ uuid: c5fdfb1f-df0d-4b93-a7a1-8051aeb27bf0 }]
     tls: { enabled: true, certificate_path: "./cert.pem", key_path: "./cert-key.pem" }
     multiplex: { enabled: true }
-    transport: { type: ws, max_early_data: 2048, early_data_header_name: Sec-WebSocket-Protocol }
+    transport: { type: ws, path: /streaming, max_early_data: 2048, early_data_header_name: Sec-WebSocket-Protocol }
   - listen: 0.0.0.0
-    listen_port: 29024
+    listen_port: 11024
     type: vmess
     tag: vmess-in
     users: [{ uuid: c5fdfb1f-df0d-4b93-a7a1-8051aeb27bf0, alterId: 0 }]
     tls: { enabled: true, certificate_path: "./cert.pem", key_path: "./cert-key.pem" }
     multiplex: { enabled: true }
-    transport: { type: ws, max_early_data: 2048, early_data_header_name: Sec-WebSocket-Protocol }
+    transport: { type: ws, path: /streaming, max_early_data: 2048, early_data_header_name: Sec-WebSocket-Protocol }
 outbounds:
   - type: direct
     tag: direct-out
