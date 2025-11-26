@@ -8,18 +8,17 @@ inbounds:
     type: vless
     tag: vless-in
     users: [{ uuid: c5fdfb1f-df0d-4b93-a7a1-8051aeb27bf0 }]
-    # mkcert test.cc
-    tls:
-      enabled: true
-      certificate_path: './cert.pem'
-      key_path: './cert-key.pem'
-    multiplex:
-      enabled: true
-    transport:
-      type: ws
-      path: /streaming
-      max_early_data: 2048
-      early_data_header_name: Sec-WebSocket-Protocol
+    tls: { enabled: true, certificate_path: "./cert.pem", key_path: "./cert-key.pem" }
+    multiplex: { enabled: true }
+    transport: { type: ws, path: /streaming, max_early_data: 2048, early_data_header_name: Sec-WebSocket-Protocol }
+  - listen: 0.0.0.0
+    listen_port: 29024
+    type: vmess
+    tag: vmess-in
+    users: [{ uuid: c5fdfb1f-df0d-4b93-a7a1-8051aeb27bf0, alterId: 0 }]
+    tls: { enabled: true, certificate_path: "./cert.pem", key_path: "./cert-key.pem" }
+    multiplex: { enabled: true }
+    transport: { type: ws, path: /streaming, max_early_data: 2048, early_data_header_name: Sec-WebSocket-Protocol }
 outbounds:
   - type: direct
     tag: direct-out
