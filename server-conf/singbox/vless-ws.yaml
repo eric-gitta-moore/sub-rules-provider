@@ -1,8 +1,8 @@
 # 给 singbox 使用前需要转 json
 # yq -o j config.yaml > config.json
-# curl https://github.com/SagerNet/sing-box/releases/download/v1.12.12/sing-box-1.12.12-linux-amd64.tar.gz -L -o - | tar xzvf -
+# curl https://github.com/SagerNet/sing-box/releases/download/v1.12.12/sing-box-1.12.12-linux-amd64.tar.gz -L | tar xzvf -
 # wget https://github.com/FiloSottile/mkcert/releases/download/v1.4.4/mkcert-v1.4.4-linux-amd64 -O mkcert
-# mkcert -cert-file cert.pem -key-file cert-key.pem aa.cc
+# chmod +x ./mkcert && ./mkcert -cert-file cert.pem -key-file cert-key.pem aa.cc
 log:
   level: info
 inbounds:
