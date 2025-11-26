@@ -1,5 +1,6 @@
 # 给 singbox 使用前需要转 json
 # yq -o j config.yaml > config.json
+# wget https://github.com/FiloSottile/mkcert/releases/download/v1.4.4/mkcert-v1.4.4-linux-amd64 -O mkcert
 # mkcert -cert-file cert.pem -key-file cert-key.pem aa.cc
 log:
   level: info
