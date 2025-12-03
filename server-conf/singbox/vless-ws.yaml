@@ -25,3 +25,19 @@ inbounds:
 outbounds:
   - type: direct
     tag: direct-out
+  - type: socks
+    tag: socks-out
+    server: 127.0.0.1
+    server_port: 1080
+route:
+  rules:
+    - action: route
+      rule_set: [ geosite-gemini ]  
+      outbound: socks-out
+    - action: route
+      outbound: direct-out
+  rule_set:
+    - tag: geosite-gemini
+      type: remote
+      download_detour: direct-out
+      url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/google-gemini.json
