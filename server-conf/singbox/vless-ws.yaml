@@ -49,7 +49,8 @@ route:
   rules:
     - action: route
       rule_set: [geosite-gemini]
-      outbound: wg-out
+      outbound: masque-out
+      # outbound: wg-out
     - action: route
       outbound: direct-out
   rule_set:
