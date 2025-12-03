@@ -54,7 +54,8 @@ route:
     - action: route
       outbound: direct-out
   rule_set:
-    - tag: geosite-gemini
-      type: remote
-      download_detour: direct-out
-      url: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/google-gemini.json"
+    - { tag: geosite-gemini, type: remote, download_detour: direct-out, url: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/google-gemini.json" }
+    - { tag: geosite-google, type: remote, download_detour: direct-out, url: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/google.json" }
+    - { tag: geosite-youtube, type: remote, download_detour: direct-out, url: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/youtube.json" }
+    - { tag: geosite-meta, type: remote, download_detour: direct-out, url: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/meta.json" }
+    - { tag: geosite-ai, type: remote, download_detour: direct-out, url: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ai-!cn.json" }
