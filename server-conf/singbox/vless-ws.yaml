@@ -1,8 +1,6 @@
 # 给 singbox 使用前需要转 json
 # yq -o j config.yaml > config.json
 # curl https://github.com/SagerNet/sing-box/releases/download/v1.12.12/sing-box-1.12.12-linux-amd64.tar.gz -L | tar xzvf -
-# wget -O mkcert https://github.com/FiloSottile/mkcert/releases/download/v1.4.4/mkcert-v1.4.4-linux-amd64 && chmod +x ./mkcert
-# ./mkcert -cert-file cert.pem -key-file cert-key.pem aa.cc
 log:
   level: info
 inbounds:
@@ -11,6 +9,8 @@ inbounds:
     type: vless
     tag: vless-in
     users: [{ uuid: c5fdfb1f-df0d-4b93-a7a1-8051aeb27bf0 }]
+    # wget -O mkcert https://github.com/FiloSottile/mkcert/releases/download/v1.4.4/mkcert-v1.4.4-linux-amd64 && chmod +x ./mkcert
+    # ./mkcert -cert-file cert.pem -key-file cert-key.pem aa.cc
     tls: { enabled: true, certificate_path: "./cert.pem", key_path: "./cert-key.pem" }
     multiplex: { enabled: true }
     transport: { type: ws, path: /streaming, max_early_data: 2048, early_data_header_name: Sec-WebSocket-Protocol }
