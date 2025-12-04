@@ -12,7 +12,7 @@ services:
     image: caddy:2.10.2-alpine
     ports:
       - 21180:80
-      - 21433:80
-      - 21433:80/udp
+      - 21433:443
+      - 21433:443/udp
     volumes:
       - .:/etc/caddy
