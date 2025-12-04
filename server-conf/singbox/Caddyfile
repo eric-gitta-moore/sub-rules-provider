@@ -1,5 +1,11 @@
 # curl https://github.com/caddyserver/caddy/releases/download/v2.10.2/caddy_2.10.2_linux_amd64.tar.gz -L | tar xzvf -
-:29023, :443 {
+
+{
+	http_port 8080
+	https_port 8443
+}
+
+(myApp) {
 	tls internal
 	# vless+wss
 	handle_path /v1/realtime/* {
@@ -36,4 +42,13 @@
 		try_files {path} /index.html
 		file_server
 	}
+}
+
+a.cc:29023, a.cc:443 {
+	tls internal
+	import myApp
+}
+
+http://a.cc:29080 {
+	import myApp
 }
