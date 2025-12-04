@@ -17,7 +17,7 @@ services:
       - 21433:443/udp
     volumes:
       - .:/etc/caddy
-  restart: unless-stopped
+    restart: unless-stopped
 
   warp:
     profiles: [warp]
