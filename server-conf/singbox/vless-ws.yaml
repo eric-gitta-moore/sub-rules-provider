@@ -44,7 +44,7 @@ inbounds:
     users: [{ uuid: c5fdfb1f-df0d-4b93-a7a1-8051aeb27bf0, alterId: 0 }]
     tls: { enabled: true, certificate_path: "./cert.pem", key_path: "./cert-key.pem" }
     multiplex: { enabled: true }
-    # 不太行，还没实现 http3 over gQUIC
+    # 不太行，这是 gQUIC 还没实现 http3
     transport: { type: quic }
 outbounds:
   - { type: direct, tag: direct-out }
