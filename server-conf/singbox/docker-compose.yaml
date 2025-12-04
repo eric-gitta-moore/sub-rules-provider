@@ -4,6 +4,7 @@ services:
     ports:
       - 11023:11023
       - 11024:11024
+      - 11025:11025
     volumes:
       - .:/singbox/conf
     command: run -D /singbox/conf

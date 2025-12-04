@@ -27,7 +27,7 @@
 		}
 	}
 
-	# 2. 针对普通 Chat API 的分流规则 (SSE/HTTP)
+	# vmess+quic
 	handle_path /v1/chat/* {
 		reverse_proxy https://singbox:11025 {
 			transport http {
