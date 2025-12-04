@@ -1,5 +1,5 @@
 # curl https://github.com/caddyserver/caddy/releases/download/v2.10.2/caddy_2.10.2_linux_amd64.tar.gz -L | tar xzvf -
-example.com:29023, example.com:443 {
+:29023, :443 {
 	tls internal
 	# vless+wss
 	handle_path /v1/realtime/* {
