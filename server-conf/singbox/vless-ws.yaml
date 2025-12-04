@@ -58,7 +58,7 @@ endpoints:
 route:
   final: direct-out
   rules:
-    - { action: route, rule_set: [geosite-gemini], outbound: wg-out }
+    - { action: route, rule_set: [geosite-gemini], outbound: masque-out }
     - { action: route, outbound: direct-out }
   rule_set:
     - { tag: geosite-gemini, type: remote, download_detour: direct-out, url: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/google-gemini.json" }
