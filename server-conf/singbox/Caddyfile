@@ -4,7 +4,7 @@ example.com:29023, example.com:443 {
 	# vless+wss
 	handle_path /v1/realtime/* {
 		# 注意：这里必须写 https:// 协议头，否则 Caddy 默认走 http
-		reverse_proxy https://localhost:11023 {
+		reverse_proxy https://singbox:11023 {
 			transport http {
 				tls_insecure_skip_verify
 			}
@@ -14,7 +14,7 @@ example.com:29023, example.com:443 {
 	# vmess+wss
 	handle_path /v2/realtime/* {
 		# 注意：这里必须写 https:// 协议头，否则 Caddy 默认走 http
-		reverse_proxy https://localhost:11024 {
+		reverse_proxy https://singbox:11024 {
 			transport http {
 				tls_insecure_skip_verify
 			}
@@ -23,7 +23,7 @@ example.com:29023, example.com:443 {
 
 	# 2. 针对普通 Chat API 的分流规则 (SSE/HTTP)
 	handle_path /v1/chat/* {
-		reverse_proxy https://localhost:11025 {
+		reverse_proxy https://singbox:11025 {
 			transport http {
 				tls_insecure_skip_verify
 			}
