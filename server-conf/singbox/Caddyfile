@@ -7,9 +7,8 @@
 
 (myApp) {
 	tls internal
-	# vless+wss
+	# vless over wss
 	handle_path /v1/realtime/* {
-		# 注意：这里必须写 https:// 协议头，否则 Caddy 默认走 http
 		reverse_proxy https://singbox:11023 {
 			transport http {
 				tls_insecure_skip_verify
@@ -17,9 +16,8 @@
 		}
 	}
 
-	# vmess+wss
+	# vmess over wss
 	handle_path /v2/realtime/* {
-		# 注意：这里必须写 https:// 协议头，否则 Caddy 默认走 http
 		reverse_proxy https://singbox:11024 {
 			transport http {
 				tls_insecure_skip_verify
@@ -27,7 +25,7 @@
 		}
 	}
 
-	# vmess+quic
+	# vmess over https
 	handle_path /v1/chat/* {
 		reverse_proxy https://singbox:11025 {
 			transport http {

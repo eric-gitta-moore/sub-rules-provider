@@ -40,12 +40,11 @@ inbounds:
   - listen: 0.0.0.0
     listen_port: 11025
     type: vmess
-    tag: quic-in
+    tag: http-in
     users: [{ uuid: c5fdfb1f-df0d-4b93-a7a1-8051aeb27bf0, alterId: 0 }]
     tls: { enabled: true, certificate_path: "./cert.pem", key_path: "./cert-key.pem" }
     multiplex: { enabled: true }
-    # 不太行，这是 gQUIC 还没实现 http3
-    transport: { type: quic }
+    transport: { type: http, path: /chatting, method: POST, idle_timeout: 15s, ping_timeout: 15s }
 outbounds:
   - { type: direct, tag: direct-out }
   #   官方客户端 https://pkg.cloudflareclient.com/
