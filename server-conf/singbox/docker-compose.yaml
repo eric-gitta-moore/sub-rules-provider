@@ -7,6 +7,7 @@ services:
     volumes:
       - .:/singbox/conf
     command: run -D /singbox/conf
+    restart: unless-stopped
 
   caddy:
     image: caddy:2.10.2-alpine
@@ -16,9 +17,11 @@ services:
       - 21433:443/udp
     volumes:
       - .:/etc/caddy
+  restart: unless-stopped
 
   warp:
     profiles: [warp]
     image: ghcr.io/diniboy1123/wasque:2025.9.558.0
     ports:
       - 40000:40000
+    restart: unless-stopped
