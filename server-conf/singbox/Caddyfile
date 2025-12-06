@@ -1,8 +1,13 @@
 # curl https://github.com/caddyserver/caddy/releases/download/v2.10.2/caddy_2.10.2_linux_amd64.tar.gz -L | tar xzvf -
-
 {
 	http_port 8080
 	https_port 8443
+}
+
+(proxy_config) {
+	transport http {
+		tls_insecure_skip_verify
+	}
 }
 
 (myApp) {
@@ -11,27 +16,21 @@
 	# vless over wss
 	handle_path /v1/realtime/* {
 		reverse_proxy https://singbox:11023 {
-			transport http {
-				tls_insecure_skip_verify
-			}
+			import proxy_config
 		}
 	}
 
 	# vmess over wss
 	handle_path /v2/realtime/* {
 		reverse_proxy https://singbox:11024 {
-			transport http {
-				tls_insecure_skip_verify
-			}
+			import proxy_config
 		}
 	}
 
 	# vmess over https
 	handle_path /v1/chat/* {
 		reverse_proxy https://singbox:11025 {
-			transport http {
-				tls_insecure_skip_verify
-			}
+			import proxy_config
 		}
 	}
 
