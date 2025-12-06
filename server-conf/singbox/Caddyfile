@@ -6,6 +6,7 @@
 }
 
 (myApp) {
+	log
 	tls internal
 	# vless over wss
 	handle_path /v1/realtime/* {
