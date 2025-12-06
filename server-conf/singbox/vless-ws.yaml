@@ -17,7 +17,7 @@ comment: |
     $ pm2 save
 
 log:
-  level: info
+  level: debug
 inbounds:
   - listen: 0.0.0.0
     listen_port: 11023
