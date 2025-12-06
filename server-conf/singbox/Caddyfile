@@ -48,6 +48,6 @@ a.cc:29023, a.cc:443 {
 	import myApp
 }
 
-http://a.cc:29080 {
+http://a.cc:29080, http://a.cc:80 {
 	import myApp
 }
