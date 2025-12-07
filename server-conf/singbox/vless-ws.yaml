@@ -6,7 +6,7 @@ comment: |
     $ yq -o j 'del(.comment)' config.yaml > config.json
 
   # pm2 保活
-    $ apk add npm && npm i -g pm2
+    $ apk add npm && npm i -g pm2 @dotenvx/dotenvx
   # pm2 开机自动启动
     $ pm2 startup
   # pm2 运行应用
