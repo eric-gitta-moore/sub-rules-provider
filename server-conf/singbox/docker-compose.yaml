@@ -18,6 +18,8 @@ services:
       - 21433:443/udp
     volumes:
       - .:/etc/caddy
+    environment:
+      - PWD=/etc/caddy
     restart: unless-stopped
 
   warp:

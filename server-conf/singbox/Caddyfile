@@ -36,7 +36,7 @@
 
 	# 3. 默认兜底 (可选)
 	handle {
-		root * /etc/caddy
+		root * {$PWD}
 		try_files {path} /index.html
 		file_server
 	}
