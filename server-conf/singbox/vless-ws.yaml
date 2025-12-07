@@ -10,7 +10,7 @@ comment: |
   # pm2 开机自动启动
     $ pm2 startup
   # pm2 运行应用
-    $ pm2 start -n caddy caddy -- run
+    $ pm2 start -n caddy dotenvx -- run -- caddy run --environ
     $ pm2 start -n singbox ./sing-box -- run -D .
     $ pm2 start -n masque ./usque -- socks -b 127.0.0.1 -p 1080
   # 最后保存一下配置
