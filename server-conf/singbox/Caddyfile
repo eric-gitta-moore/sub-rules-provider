@@ -42,11 +42,11 @@
 	}
 }
 
-${SITE_DOMAIN:a.cc}:29023, ${SITE_DOMAIN:a.cc}:443 {
+{$SITE_DOMAIN:a.cc}:29023, {$SITE_DOMAIN:a.cc}:443 {
 	tls internal
 	import myApp
 }
 
-http://${SITE_DOMAIN:a.cc}:29080, http://${SITE_DOMAIN:a.cc}:80 {
+http://{$SITE_DOMAIN:a.cc}:29080, http://{$SITE_DOMAIN:a.cc}:80 {
 	import myApp
 }
