@@ -17,9 +17,9 @@
   $ pm2 start -n masque ./usque -- socks -b 127.0.0.1 -p 1080
 # 最后保存一下配置
   $ pm2 save
-*/
-/*
-# cloudflared/ Cloudflare Tunnel / Argos Tunnel
+
+
+# (可选) cloudflared/ Cloudflare Tunnel / Argos Tunnel
   $ wget -O cloudflared https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 && chmod +x cloudflared
 # wss 通道
   $ export $SITE_DOMAIN=a.cc
