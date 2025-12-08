@@ -1,0 +1,16 @@
+{
+  "private": "true",
+  "name": "caddy",
+  "version": "1.0.0",
+  "main": "ecosystem.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start ecosystem.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@dotenvx/dotenvx": "latest"
+  }
+}
