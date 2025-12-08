@@ -22,7 +22,7 @@
 # (可选) cloudflared/ Cloudflare Tunnel / Argos Tunnel
   $ wget -O cloudflared https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 && chmod +x cloudflared
 # wss 通道
-  $ export $SITE_DOMAIN=a.cc
+  $ export SITE_DOMAIN=a.cc
   $ TUNNEL_LOGLEVEL=debug ./cloudflared tunnel --no-tls-verify --origin-server-name $SITE_DOMAIN --http-host-header $SITE_DOMAIN --url https://localhost
 # ws 通道
   $ TUNNEL_LOGLEVEL=debug ./cloudflared tunnel --http-host-header $SITE_DOMAIN --url http://localhost
