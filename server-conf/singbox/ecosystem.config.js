@@ -3,7 +3,7 @@
   $ curl https://github.com/SagerNet/sing-box/releases/download/v1.12.12/sing-box-1.12.12-linux-amd64.tar.gz -L | tar xzvf -
 
 # 给 singbox 使用前需要转 json
-  $ yq -o j 'del(.comment)' config.yaml > config.json
+  $ yq -o j 'del(.comment)' vless-ws.yaml > config.json
 
 # pm2 保活
   $ apk add npm && npm i -g pm2 @dotenvx/dotenvx
