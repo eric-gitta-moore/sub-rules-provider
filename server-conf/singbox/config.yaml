@@ -31,8 +31,8 @@ inbounds:
     listen_port: 21023
     type: hysteria2
     tag: hy2-in
-    up_mbps: 1000
-    down_mbps: 1000
+    up_mbps: 300
+    down_mbps: 300
     users: [{ password: c5fdfb1f-df0d-4b93-a7a1-8051aeb27bf0 }]
     tls: { enabled: true, certificate_path: "./cert.pem", key_path: "./cert-key.pem" }
     multiplex: { enabled: true }
