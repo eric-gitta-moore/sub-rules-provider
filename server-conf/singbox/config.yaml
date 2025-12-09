@@ -28,7 +28,7 @@ inbounds:
     multiplex: { enabled: true }
     transport: { type: http, path: /chatting, method: POST, idle_timeout: 15s, ping_timeout: 15s }
   - listen: 0.0.0.0
-    listen_port: 21023
+    listen_port: 29124
     type: hysteria2
     tag: hy2-in
     up_mbps: 300
