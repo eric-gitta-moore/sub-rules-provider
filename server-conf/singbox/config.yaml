@@ -35,7 +35,6 @@ inbounds:
     down_mbps: 1000
     users: [{ password: c5fdfb1f-df0d-4b93-a7a1-8051aeb27bf0 }]
     tls: { enabled: true, certificate_path: "./cert.pem", key_path: "./cert-key.pem" }
-    multiplex: { enabled: true }
 outbounds:
   - { type: direct, tag: direct-out }
   #   官方客户端 https://pkg.cloudflareclient.com/
