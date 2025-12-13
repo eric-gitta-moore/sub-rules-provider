@@ -1,5 +1,5 @@
 /*
-# DNS 改谷歌
+# DNS 改谷歌，有的用 cloudflare 或者 Quad9 会导致 ECS 失效
   $ echo 'nameserver 8.8.8.8\nnameserver 8.8.4.4' >> /etc/resolv.conf
 
 # 安装 singbox
