@@ -15,6 +15,13 @@ proxies:
     type: socks5
     server: 10.126.126.2
     port: 1080
+    smux:
+      enabled: true
+      max-streams: 4
+      only-tcp: true
+      padding: true
+      protocol: h2mux
+      statistic: true
 
 tun:
   enable: true
