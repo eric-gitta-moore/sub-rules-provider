@@ -16,10 +16,12 @@
   $ pm2 install pm2-logrotate
   $ pm2 set pm2-logrotate:max_size 1K
   $ pm2 set pm2-logrotate:retain 1
-# pm2 运行应用
+# pm2 运行应用 (废弃)
   $ pm2 start -n caddy dotenvx -- run -- caddy run --environ
   $ pm2 start -n singbox ./sing-box -- run -D .
   $ pm2 start -n masque ./usque -- socks -b 127.0.0.1 -p 1080
+# pm2 运行 ecosystem
+  $ pm2 start ecosystem.config.js
 # 最后保存一下配置
   $ pm2 save
 
