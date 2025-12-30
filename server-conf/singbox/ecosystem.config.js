@@ -14,6 +14,8 @@
   $ pm2 startup
 # pm2 日志插件，限制日志大小，默认 10MB
   $ pm2 install pm2-logrotate
+  $ pm2 set pm2-logrotate:max_size 1K
+  $ pm2 set pm2-logrotate:retain 1
 # pm2 运行应用
   $ pm2 start -n caddy dotenvx -- run -- caddy run --environ
   $ pm2 start -n singbox ./sing-box -- run -D .
