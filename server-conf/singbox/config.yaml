@@ -2,7 +2,12 @@
 log:
   level: debug
 dns:
-  servers: [{ type: udp, server: 8.8.8.8 }, { type: udp, server: 8.8.4.4 }]
+  servers: [{ tag: g1, type: udp, server: 8.8.8.8 }, { type: udp, server: 8.8.4.4 }]
+  # rules:
+  #   - action: route
+  #     server: g1
+  #     rule_set: [geosite-gemini]
+  #     strategy: ipv6_only
 inbounds:
   - listen: 0.0.0.0
     listen_port: 11023
