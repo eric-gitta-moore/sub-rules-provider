@@ -2,12 +2,9 @@
 log:
   level: debug
 dns:
-  servers: [{ tag: g1, type: udp, server: 8.8.8.8 }, { type: udp, server: 8.8.4.4 }]
-  # rules:
-  #   - action: route
-  #     server: g1
-  #     rule_set: [geosite-gemini]
-  #     strategy: ipv6_only
+  servers: [{ type: udp, server: 8.8.8.8 }, { type: udp, server: 8.8.4.4 }] # , { tag: unlock, type: udp, server: 172.16.36.100 }
+  rules:
+  #   - { action: route, server: unlock, rule_set: [geosite-category-ai-!cn] }
 inbounds:
   - listen: 0.0.0.0
     listen_port: 11023
@@ -74,4 +71,4 @@ route:
     - { tag: geosite-google, type: remote, download_detour: direct-out, url: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/google.json" }
     - { tag: geosite-youtube, type: remote, download_detour: direct-out, url: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/youtube.json" }
     - { tag: geosite-meta, type: remote, download_detour: direct-out, url: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/meta.json" }
-    - { tag: geosite-ai, type: remote, download_detour: direct-out, url: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ai-!cn.json" }
+    - { tag: geosite-category-ai-!cn, type: remote, download_detour: direct-out, url: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ai-!cn.json" }
